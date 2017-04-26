@@ -17,7 +17,7 @@ To launch openssl-python tool, just download the source code, and run the follow
 ```
 python3 main.py
 ```
-Or alternatively, if python is in the path, run te following commands:
+Or alternatively, if python is in the path, run the following commands:
 ```
 chmod +x main.py
 ./main.py
