@@ -1,25 +1,26 @@
 # from distutils.core import setup
-from setuptools import setup
+from setuptools import setup, find_packages
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+        long_description = f.read()
 
 setup(
     name='openssl-python',
     version='0.1',
     packages=['pyopenssl'],
-    url='',
+    url='https://github.com/the11/openssl-python',
     license='GNU GPLv3',
     author='Youssef Seddik',
     author_email='yseddik94@gmail.com',
     description='Command line interface to OpenSSL with Python3',
-    long_description='This tool is a command line interface to OpenSSL, '
-                     'written with Python3.'
-                     'It permits encrypting/decrypting files, '
-                     'as well as generating  RSA keys, encrypting the private '
-                     'RSA key, signing a file using an RSA key, and also '
-                     'verifying signatures using RSA',
-   classifiers=[
+    long_description=long_description,
+    classifiers=[
         'Development Status :: 3 - Alpha',
-        'Intended Audience :: All',
-        'License :: OSI Approved :: GNU GPLv3',
+        'Intended Audience :: Information Technology',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3.4',
    ],
     keywords='crypto encryption RSA-keys signature signature-verification',
