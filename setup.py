@@ -1,15 +1,11 @@
-# from distutils.core import setup
-from setuptools import setup, find_packages
-from codecs import open
-from os import path
+import setuptools
 
-here = path.abspath(path.dirname(__file__))
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-        long_description = f.read()
+with open("README.md", "r") as f:
+    long_description = f.read()
 
-setup(
+setuptools.setup(
     name='openssl-python',
-    version='0.1',
+    version='0.1.1',
     packages=['pyopenssl'],
     url='https://github.com/the11/openssl-python',
     license='GNU GPLv3',
