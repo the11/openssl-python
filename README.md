@@ -13,16 +13,32 @@ Usually, this dependency exists by default in most of the supported platforms(se
   
 ## Usage
 
-To launch openssl-python tool, just download the source code, and run the following command:  
-```
-python3 main.py
-```
-Or alternatively, if python is in the path, run the following commands:
-```
-chmod +x main.py
-./main.py
-```
-  
+### Using the source code
+* To launch openssl-python tool, just clone the source code from [Github Repository](https://github.com/the11/openssl-python):
+    ```
+    git clone git@github.com:the11/openssl-python.git
+    ```
+* Go to the source code directory and proceed in one of the two following ways:
+    * run the following command:  
+    ```
+    python3 openssl-python.py
+    ```
+    * Or alternatively, if python is in the path, run the following commands:
+    ```
+    chmod +x openssl-python.py
+    ./openssl-python.py
+    ```
+### Using pip
+* Download the package by using the pip tool:
+    ```
+    pip install openssl-python
+    ```
+* Launch your Python interpreter and start using the package
+    ```
+    python3
+    >>> import openssl_python
+    ```
+
 
 ## Platform support
 

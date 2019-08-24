@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name='openssl-python',
-    version='0.1.1',
+    version='0.1.2',
     packages=['pyopenssl'],
     url='https://github.com/the11/openssl-python',
     license='GNU GPLv3',
@@ -13,11 +13,13 @@ setuptools.setup(
     author_email='yseddik94@gmail.com',
     description='Command line interface to OpenSSL with Python3',
     long_description=long_description,
+    log_description_content_type="text/markdown",
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Information Technology',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3.4',
+        'Operating System :: OS Independent',
    ],
     keywords='crypto encryption RSA-keys signature signature-verification',
 )
