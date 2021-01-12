@@ -36,7 +36,7 @@ Usually, this dependency exists by default in most of the supported platforms(se
 * Launch your Python interpreter and start using the package
     ```
     python3
-    >>> import openssl_python
+    >>> import pyopenssl
     ```
 
 
